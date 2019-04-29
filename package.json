@@ -7,10 +7,11 @@
     "start": "nodemon --exec babel-node src/index.js",
     "build": "npx webpack --mode production --config webpack.config.js",
     "build:dev": "npx webpack --mode development --config webpack.config.js",
-    "sample": "nodemon --exec babel-node dist/main.js"
+    "sample": "nodemon --exec babel-node dist/main.js",
+    "test":"./node_modules/mocha/bin/mocha"
   },
   "keywords": [],
-  "author": "",
+  "author": "sudoak",
   "license": "ISC",
   "dependencies": {
     "dotenv": "^7.0.0",
