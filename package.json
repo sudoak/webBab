@@ -4,11 +4,12 @@
   "description": "",
   "main": "index.js",
   "scripts": {
+    "lint": "eslint",
     "start": "nodemon --exec babel-node src/index.js",
     "build": "npx webpack --mode production --config webpack.config.js",
     "build:dev": "npx webpack --mode development --config webpack.config.js",
     "sample": "nodemon --exec babel-node dist/main.js",
-    "test":"./node_modules/mocha/bin/mocha"
+    "test": "./node_modules/mocha/bin/mocha"
   },
   "keywords": [],
   "author": "sudoak",
@@ -23,6 +24,9 @@
     "@babel/node": "^7.2.2",
     "@babel/preset-env": "^7.4.3",
     "dotenv-webpack": "^1.7.0",
+    "eslint": "^5.16.0",
+    "eslint-config-airbnb-base": "^13.1.0",
+    "eslint-plugin-import": "^2.17.3",
     "mocha": "^6.1.4"
   }
 }
